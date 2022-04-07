@@ -29,16 +29,24 @@
                     </div>
                     <nav class="navbar">
                         <ul class="nav-links">
-                            <li><a href="index.html" class="active">Home</a></li>
-                            <li><a href="#FIXME">News</a></li>
-                            <li><a href="#FIXME">Live cameras</a></li>
-                            <li><a href="photos.html">Photos</a></li>
-                            <li><a href="#FIXME">Contact</a></li>
+                            <li><a href="index.html" class="active" title="Home">Home</a></li>
+                            <li><a href="#FIXME" title="News">News</a></li>
+                            <li><a href="#FIXME" title="Live Cameras">Live cameras</a></li>
+                            <li><a href="photos.html" title="Photos">Photos</a></li>
+                            <li><a href="#FIXME" title="Contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
             </header>
+            <!--header section ends-->
+            <!--section banner start -->
             <section class="banner">
+                <form method="GET" class="input-form">
+                    <div class="input-container">
+                        <input type="text" name="city" id="city_field">
+                        <button type="submit">Find</button>
+                    </div>
+                </form>
                 <div class="weather-container">
                     <div class="current-day">
                         <p class="day">Monday</p>
@@ -49,18 +57,114 @@
                         <div class="temperature-icon">
                             <p class="temp">31 C</p>
                             <div class="icons-container">
-                                <img src="assets/images/icons/icon-1.svg" alt="Clear" data-icon="clear">
-                                <img src="assets/images/icons/icon-13.svg" alt="Drizzle" data-icon="drizzle">
-                                <img src="assets/images/icons/icon-12.svg" alt="Thunderstorm" data-main="thunderstorm">
-                                <img src="assets/images/icons/icon-14.svg" alt="Rain" data-icon="rain">
-                                <img src="assets/images/icons/icon-3.svg" alt="Clouds Icon" data-icon="clouds">
-                                <img src="assets/images/icons/icon-7.svg" alt="Rain" data-main="smoke">
+                                <img src="assets/images/icons/icon-1.svg" alt="Clear Icon" class="hide" data-icon="clear">
+                                <img src="assets/images/icons/icon-13.svg" alt="Drizzle  Icon" class="hide" data-icon="drizzle">
+                                <img src="assets/images/icons/icon-12.svg" alt="Thunderstorm" class="hide" data-main="thunderstorm">
+                                <img src="assets/images/icons/icon-14.svg" alt="Rain Icon" class="hide" data-icon="rain">
+                                <img src="assets/images/icons/icon-3.svg" alt="Clouds Icon" class="hide" data-icon="clouds">
+                                <img src="assets/images/icons/icon-7.svg" alt="Smoke Mist Haze Icon" class="hide" data-main="smoke">
+                            </div>
+                        </div>
+                        <div class="additional-info">
+                            <div class="humidity-container">
+                                <figure>
+                                    <img src="assets/images/icon-umberella.png" alt="Umbrella Icon">
+                                </figure>
+                                <p class="humidity">20%</p>
+                            </div>
+                            <div class="wind-container">
+                                <figure>
+                                    <img src="assets/images/icon-wind.png" alt="Wind Icon">
+                                </figure>
+                                <p class="wind">18 km/hr</p>
+                            </div>
+                            <div class="compass-container">
+                                <figure>
+                                    <img src="assets/images/icon-compass.png" alt="Compass Icon">
+                                    <p class="compass"></p>
+                                </figure>
                             </div>
                         </div>
                     </div>    
                 </div>
             </section>
-            <!--header section ends-->
+            <!--section banner end  -->
+            <!--section live cameras start  -->
+            <section class="live-camera">
+                <ul class="cards">
+                    <li class="card-item">
+                        <figure class="card-img">
+                            <img src="assets/images/live-camera-1.jpg" alt="New York">
+                        </figure>
+                        <button class="modal-btn" data-modal="new-york"><img src="assets/images/play-button.png" alt=""></button>
+                        <div class="card-content">
+                            <h3>New York</h3>
+                            <p>8 oct, 8:00 AM</p>
+                        </div>
+                    </li>
+                    <li class="card-item">
+                        <figure class="card-img">
+                            <img src="assets/images/live-camera-2.jpg" alt="New York">
+                        </figure>
+                        <button class="modal-btn" data-modal="new-york"><img src="assets/images/play-button.png" alt=""></button>
+                        <div class="card-content">
+                            <h3>Los Angeles</h3>
+                            <p>8 oct, 8:00 AM</p>
+                        </div>
+                    </li>     
+                    <li class="card-item">
+                        <figure class="card-img">
+                            <img src="assets/images/live-camera-3.jpg" alt="Chicago">
+                        </figure>
+                        <button class="modal-btn" data-modal="new-york"><img src="assets/images/play-button.png" alt=""></button>
+                        <div class="card-content">
+                            <h3>Los Angeles</h3>
+                            <p>8 oct, 8:00 AM</p>
+                        </div>
+                    </li>     
+                    <li class="card-item">
+                        <figure class="card-img">
+                            <img src="assets/images/live-camera-4.jpg" alt="Chicago">
+                        </figure>
+                        <button class="modal-btn" data-modal="new-york"><img src="assets/images/play-button.png" alt=""></button>
+                        <div class="card-content">
+                            <h3>London</h3>
+                            <p>8 oct, 8:00 AM</p>
+                        </div>
+                    </li>     
+                </ul>        
+            </section>
+            <!--section live cameras end  -->
+            <!--section placeholder start  -->
+            <div class="placeholder">
+                <ul class="placeholder-rows">
+                    <li class="placeholder-item">
+                        <p>06.10</p>
+                        <div class="placeholder-content">
+                            <p class="bold-text">Doloremque Lorem ipsum dolor</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse minus quasi, molestias molestiae explicabo necessitatibus qui sit mollitia natus, ex nam! Quia sequi labore dolores debitis alias veritatis molestias. Excepturi?</p>
+                        </div>
+                        <span class="right-arrow">right-arrow</span>
+                    </li>
+                    <li class="placeholder-item">
+                        <p>06.10</p>
+                        <div class="placeholder-content">
+                            <p class="bold-text">Doloremque Lorem ipsum dolor</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse minus quasi, molestias molestiae explicabo necessitatibus qui sit mollitia natus, ex nam! Quia sequi labore dolores debitis alias veritatis molestias. Excepturi?</p>
+                        </div>
+                        <span class="right-arrow">right-arrow</span>
+                    </li>
+                    <li class="placeholder-item">
+                        <p>06.10</p>
+                        <div class="placeholder-content">
+                            <p class="bold-text">Doloremque Lorem ipsum dolor</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse minus quasi, molestias molestiae explicabo necessitatibus qui sit mollitia natus, ex nam! Quia sequi labore dolores debitis alias veritatis</p>
+                        </div>
+                        <span class="right-arrow">right-arrow</span>
+                    </li>
+                </ul>
+            </div>
+            <!--section placeholder end   -->
             <!--main section start-->
             <main>
             </main>
