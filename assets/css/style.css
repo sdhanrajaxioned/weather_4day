@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 /* ==========================================================================
    1. CSS Reset Code
    ========================================================================== */
@@ -111,9 +112,56 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+header { background-color: #1E202B; }
+.logo{ padding-right: 6.5%;}
+.logo-container p {font-size: 9px;}
+.navbar { flex-basis: 47.5%;}
+.hamburger {display: none;}
+
+header .wrapper {
+  padding: 40px 0 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container {
+  padding-top: 4px;
+  display: flex;
+  flex-basis: 17%;
+  color: #FFF;
+}
+
+.logo-container h3 { 
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links li a {
+  padding: 5px 22px;
+  border : 2px solid #1E202B;
+  border-radius: 50px;
+  color: #FFF;
+  font-size: 13px;
+}
+
+.nav-links li a:hover { transition: all .4s ease-in; }
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  border : 2px solid #389AD8;
+  color: #389AD8;
+}
 
 
-
+.bar {
+  display: inline-block;
+  text-indent: -9999px;
+}
 
 
 
