@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 /* ==========================================================================
    1. CSS Reset Code
    ========================================================================== */
@@ -109,13 +108,15 @@ li {
   width: 79.4%; 
   margin: 0 auto;
 }
+
 /*=================================
-  Header styling starts here
+Header styling starts here
 =================================*/
 header { background-color: #1E202B; }
 .logo{ padding-right: 6.5%;}
 .logo-container p {font-size: 9px;}
 .navbar { flex-basis: 47.5%;}
+.nav-links li a:hover { transition: all .4s ease-in; }
 .hamburger {display: none;}
 
 header .wrapper {
@@ -149,22 +150,16 @@ header .wrapper {
   font-size: 13px;
 }
 
-.nav-links li a:hover { transition: all .4s ease-in; }
-
 .nav-links li a:hover,
 .nav-links li a.active {
   border : 2px solid #389AD8;
   color: #389AD8;
 }
 
-
 .bar {
   display: inline-block;
   text-indent: -9999px;
 }
-
-
-
 /*=================================
   Header styling ends here
 =================================*/  
@@ -172,13 +167,137 @@ header .wrapper {
 /*=================================
   main styling starts here
 =================================*/
+.banner {
+  padding: 62px 0 197px;
+  background: url(/assets/images/banner.png);
+}
+
+.input-container {
+  width: 100%;
+  position: relative;
+}
+
+.find-btn {
+  padding: 13px 36px;
+  position: absolute;
+  bottom: 11%;
+  right: 0.5%;
+  border: none;
+  border-radius: 50px;
+  color: #FFF;
+  background-color: #389AD8;
+  font-size: 12px;
+}
+
+.find-btn:hover {
+  color: #389AD8;
+  background-color: #EEE;
+  transition: .4s ease-in;
+}
+
+#city_field { 
+  line-height: normal;
+  width: 99.7%;
+  height: 47px;
+  border: none;
+  border-radius: 50px;
+  background-color: #1E202B;
+}
+
+::placeholder {
+  padding-left: 16px;
+  font-size: 13px;
+}
+
+.banner{position: relative;}
+
+.hide { display: none;}
+.weather-container img { width: 80px;}
+/* .weather-container { position: absolute;} */
+
+.weather-container { 
+  position: absolute;
+  width: 39%;
+  border-radius: 5px;
+  top: 57.5%;
+  left: 0;
+  right: 0;
+  margin: auto
+}
+
+.weather-info { 
+  padding-left: 20px; 
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #323544;
+}
+.current-day {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2D303D;
+}
+.current-day p { 
+  padding: 9px 1%;
+  color: #BCBEC5;
+}
+
+.city { 
+  padding-top: 27px;
+  color: #BFC1C8; 
+  font-size: 19px;
+}
+
+.icons-container { padding-bottom: 8px; }
+
+.temperature-icon { 
+  display: flex; 
+  align-items: center;
+}
+
+.temp { 
+  padding-right: 5.3%;
+  color: #FFF;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.temperature-icon,
+.additional-info {
+  padding: 11px 0;
+}
+
+.additional-info { padding-bottom: 25px;}
+
+.additional-info img { width: inherit;}
+
+.additional-info {
+  display: flex;
+}
+
+.humidity-container,
+.wind-container,
+.compass-container {
+  display: flex;
+}
+
+.wind,
+.humidity,
+.compass { 
+  padding-left: 6%; 
+  color: #7F818B;
+  font-size: 12px;
+}
 
 
 
+.wind-container {
+  padding-left: 4.5%;
+  flex-basis: 16%;
+}
 
-
-
-
+.compass-container { padding-left: 1%; }
 
 /*=================================
   main styling ends here
