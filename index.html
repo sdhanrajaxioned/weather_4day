@@ -44,241 +44,248 @@
             <main>
                 <!--section banner start -->
                 <section class="banner">
-                    <div class="wrapper"></div>
-                    <form method="GET" class="input-form">
-                        <div class="input-container">
-                            <input type="text" name="city" id="city_field">
-                            <button type="submit">Find</button>
-                        </div>
-                    </form>
-                    <div class="weather-container">
-                        <div class="current-day">
-                            <p class="day">Monday</p>
-                            <p class="date">6 oct</p>
-                        </div>
-                        <div class="weather-info">
-                            <p class="city">Mumbai</p>
-                            <div class="temperature-icon">
-                                <p class="temp">31 C</p>
-                                <div class="icons-container">
-                                    <img src="assets/images/icons/icon-1.svg" alt="Clear Icon" class="hide" data-icon="clear">
-                                    <img src="assets/images/icons/icon-13.svg" alt="Drizzle  Icon" class="hide" data-icon="drizzle">
-                                    <img src="assets/images/icons/icon-12.svg" alt="Thunderstorm" class="hide" data-main="thunderstorm">
-                                    <img src="assets/images/icons/icon-14.svg" alt="Rain Icon" class="hide" data-icon="rain">
-                                    <img src="assets/images/icons/icon-3.svg" alt="Clouds Icon" class="hide" data-icon="clouds">
-                                    <img src="assets/images/icons/icon-7.svg" alt="Smoke Mist Haze Icon" class="hide" data-main="smoke">
-                                </div>
+                    <div class="wrapper">
+                        <form method="GET" class="input-form">
+                            <div class="input-container">
+                                <input type="text" name="city" id="city_field">
+                                <button type="submit">Find</button>
                             </div>
-                            <div class="additional-info">
-                                <div class="humidity-container">
-                                    <figure>
-                                        <img src="assets/images/icon-umberella.png" alt="Umbrella Icon">
-                                    </figure>
-                                    <p class="humidity">20%</p>
-                                </div>
-                                <div class="wind-container">
-                                    <figure>
-                                        <img src="assets/images/icon-wind.png" alt="Wind Icon">
-                                    </figure>
-                                    <p class="wind">18 km/hr</p>
-                                </div>
-                                <div class="compass-container">
-                                    <figure>
-                                        <img src="assets/images/icon-compass.png" alt="Compass Icon">
-                                        <p class="compass"></p>
-                                    </figure>
-                                </div>
+                        </form>
+                        <div class="weather-container">
+                            <div class="current-day">
+                                <p class="day">Monday</p>
+                                <p class="date">6 oct</p>
                             </div>
+                            <div class="weather-info">
+                                <p class="city">Mumbai</p>
+                                <div class="temperature-icon">
+                                    <p class="temp">31 C</p>
+                                    <div class="icons-container">
+                                        <img src="assets/images/icons/icon-1.svg" alt="Clear Icon" class="hide" data-icon="clear">
+                                        <img src="assets/images/icons/icon-13.svg" alt="Drizzle  Icon" class="hide" data-icon="drizzle">
+                                        <img src="assets/images/icons/icon-12.svg" alt="Thunderstorm" class="hide" data-main="thunderstorm">
+                                        <img src="assets/images/icons/icon-14.svg" alt="Rain Icon" class="hide" data-icon="rain">
+                                        <img src="assets/images/icons/icon-3.svg" alt="Clouds Icon" class="hide" data-icon="clouds">
+                                        <img src="assets/images/icons/icon-7.svg" alt="Smoke Mist Haze Icon" class="hide" data-main="smoke">
+                                    </div>
+                                </div>
+                                <div class="additional-info">
+                                    <div class="humidity-container">
+                                        <figure>
+                                            <img src="assets/images/icon-umberella.png" alt="Umbrella Icon">
+                                        </figure>
+                                        <p class="humidity">20%</p>
+                                    </div>
+                                    <div class="wind-container">
+                                        <figure>
+                                            <img src="assets/images/icon-wind.png" alt="Wind Icon">
+                                        </figure>
+                                        <p class="wind">18 km/hr</p>
+                                    </div>
+                                    <div class="compass-container">
+                                        <figure>
+                                            <img src="assets/images/icon-compass.png" alt="Compass Icon">
+                                            <p class="compass"></p>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>    
                         </div>    
                     </div>
                 </section>
                 <!--section banner end  -->
                 <!--section live cameras start  -->
                 <section class="live-camera">
-                    <ul class="cards">
-                        <li class="card-item">
-                            <figure class="card-img">
-                            <img src="assets/images/live-camera-1.jpg" alt="New York">
-                            </figure>
-                            <button class="modal-btn" data-modal="new-york"><img src="assets/images/play-button.png" alt=""></button>
-                            <div class="card-content">
-                                <h3>New York</h3>
-                                <p>8 oct, 8:00 AM</p>
-                            </div>
-                        </li>
-                        <li class="card-item">
-                            <figure class="card-img">
-                                <img src="assets/images/live-camera-2.jpg" alt="New York">
-                            </figure>
-                            <button class="modal-btn" data-modal="new-york"><img src="assets/images/play-button.png" alt=""></button>
-                            <div class="card-content">
-                                <h3>Los Angeles</h3>
-                                <p>8 oct, 8:00 AM</p>
-                            </div>
-                        </li>     
-                        <li class="card-item">
-                            <figure class="card-img">
-                                <img src="assets/images/live-camera-3.jpg" alt="Chicago">
-                            </figure>
-                            <button class="modal-btn" data-modal="new-york"><img src="assets/images/play-button.png" alt=""></button>
-                            <div class="card-content">
-                                <h3>Los Angeles</h3>
-                                <p>8 oct, 8:00 AM</p>
-                            </div>
-                        </li>     
-                        <li class="card-item">
-                            <figure class="card-img">
-                                <img src="assets/images/live-camera-4.jpg" alt="Chicago">
-                            </figure>
-                            <button class="modal-btn" data-modal="new-york"><img src="assets/images/play-button.png" alt=""></button>
-                            <div class="card-content">
-                                <h3>London</h3>
-                                <p>8 oct, 8:00 AM</p>
-                            </div>
-                        </li>     
-                    </ul>        
+                    <div class="wrapper">
+                        <ul class="cards">
+                            <li class="card-item">
+                                <figure class="card-img">
+                                <img src="assets/images/live-camera-1.jpg" alt="New York">
+                                </figure>
+                                <button class="modal-btn" data-modal="new-york"><img src="assets/images/play-button.png" alt=""></button>
+                                <div class="card-content">
+                                    <h3>New York</h3>
+                                    <p>8 oct, 8:00 AM</p>
+                                </div>
+                            </li>
+                            <li class="card-item">
+                                <figure class="card-img">
+                                    <img src="assets/images/live-camera-2.jpg" alt="New York">
+                                </figure>
+                                <button class="modal-btn" data-modal="new-york"><img src="assets/images/play-button.png" alt=""></button>
+                                <div class="card-content">
+                                    <h3>Los Angeles</h3>
+                                    <p>8 oct, 8:00 AM</p>
+                                </div>
+                            </li>     
+                            <li class="card-item">
+                                <figure class="card-img">
+                                    <img src="assets/images/live-camera-3.jpg" alt="Chicago">
+                                </figure>
+                                <button class="modal-btn" data-modal="new-york"><img src="assets/images/play-button.png" alt=""></button>
+                                <div class="card-content">
+                                    <h3>Los Angeles</h3>
+                                    <p>8 oct, 8:00 AM</p>
+                                </div>
+                            </li>     
+                            <li class="card-item">
+                                <figure class="card-img">
+                                    <img src="assets/images/live-camera-4.jpg" alt="Chicago">
+                                </figure>
+                                <button class="modal-btn" data-modal="new-york"><img src="assets/images/play-button.png" alt=""></button>
+                                <div class="card-content">
+                                    <h3>London</h3>
+                                    <p>8 oct, 8:00 AM</p>
+                                </div>
+                            </li>     
+                        </ul>
+                    </div>
                 </section>
                 <!--section live cameras end  -->
                 <!--section placeholder start  -->
                 <section class="placeholder">
-                    <ul class="placeholder-rows">
-                        <li class="placeholder-item">
-                            <p>06.10</p>
-                            <div class="placeholder-content">
-                                <p class="bold-text">Doloremque Lorem ipsum dolor</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse minus quasi, molestias molestiae explicabo necessitatibus qui sit mollitia natus, ex nam! Quia sequi labore dolores debitis alias veritatis molestias. Excepturi?</p>
-                            </div>
-                            <span class="right-arrow">right-arrow</span>
-                        </li>
-                        <li class="placeholder-item">
-                            <p>06.10</p>
-                            <div class="placeholder-content">
-                                <p class="bold-text">Doloremque Lorem ipsum dolor</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse minus quasi, molestias molestiae explicabo necessitatibus qui sit mollitia natus, ex nam! Quia sequi labore dolores debitis alias veritatis molestias. Excepturi?</p>
-                            </div>
-                            <span class="right-arrow">right-arrow</span>
-                        </li>
-                        <li class="placeholder-item">
-                            <p>06.10</p>
-                            <div class="placeholder-content">
-                                <p class="bold-text">Doloremque Lorem ipsum dolor</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse minus quasi, molestias molestiae explicabo necessitatibus qui sit mollitia natus, ex nam! Quia sequi labore dolores debitis alias veritatis</p>
-                            </div>
-                            <figure>
-                                <img src="assets/images/arrow.png" alt="Right Arrow">
-                            </figure>
-                        </li>
-                    </ul>
+                    <div class="wrapper">
+                        <ul class="placeholder-rows">
+                            <li class="placeholder-item">
+                                <p>06.10</p>
+                                <div class="placeholder-content">
+                                    <p class="bold-text">Doloremque Lorem ipsum dolor</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse minus quasi, molestias molestiae explicabo necessitatibus qui sit mollitia natus, ex nam! Quia sequi labore dolores debitis alias veritatis molestias. Excepturi?</p>
+                                </div>
+                                <span class="right-arrow">right-arrow</span>
+                            </li>
+                            <li class="placeholder-item">
+                                <p>06.10</p>
+                                <div class="placeholder-content">
+                                    <p class="bold-text">Doloremque Lorem ipsum dolor</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse minus quasi, molestias molestiae explicabo necessitatibus qui sit mollitia natus, ex nam! Quia sequi labore dolores debitis alias veritatis molestias. Excepturi?</p>
+                                </div>
+                                <span class="right-arrow">right-arrow</span>
+                            </li>
+                            <li class="placeholder-item">
+                                <p>06.10</p>
+                                <div class="placeholder-content">
+                                    <p class="bold-text">Doloremque Lorem ipsum dolor</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse minus quasi, molestias molestiae explicabo necessitatibus qui sit mollitia natus, ex nam! Quia sequi labore dolores debitis alias veritatis</p>
+                                </div>
+                                <figure>
+                                    <img src="assets/images/arrow.png" alt="Right Arrow">
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
                 </section>
                 <!--section placeholder end   -->
                 <!--section features start   -->
                 <section class="features">
-                    <ul class="features-flex">
-                        <li class="application-features">
-                            <h1>Application features</h1>
-                            <ul class="application-feature-content">
-                                <li class="application-feature-item">
-                                    <figure>
-                                        <img src="assets/images/arrow.png" alt="Right Arrow">
-                                    </figure>
-                                    <div class="app-info">
-                                        <p class="bold-text">Natus Lorem ipsum dolor sit</p>
-                                        <p>Doloremque Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, unde numquam.</p>
-                                    </div>
-                                </li>
-                                <li class="application-feature-item">
-                                    <figure>
-                                        <img src="assets/images/arrow.png" alt="Right Arrow">
-                                    </figure>
-                                    <div class="app-info">
-                                        <p class="bold-text">Natus Lorem ipsum dolor sit</p>
-                                        <p>Doloremque Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, unde numquam.</p>
-                                    </div>
-                                </li>
-                                <li class="application-feature-item">
-                                    <figure>
-                                        <img src="assets/images/arrow.png" alt="Right Arrow">
-                                    </figure>
-                                    <div class="app-info">
-                                        <p class="bold-text">Natus Lorem ipsum dolor sit</p>
-                                        <p>Doloremque Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, unde numquam.</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="weather-analysis">
-                            <h1>Weather analysis</h1>
-                            <ul class="weather-content">
-                                <li class="weather-item">
-                                    <figure>
-                                        <img src="assets/images/arrow.png" alt="right-arrow-icon">
-                                    </figure>
-                                    <p>Accusantium Lorem ipsum dolor sit amet</p>
-                                </li>
-                                <li class="weather-item">
-                                    <figure>
-                                        <img src="assets/images/arrow.png" alt="right-arrow-icon">
-                                    </figure>
-                                    <p>Accusantium Lorem ipsum dolor sit amet</p>
-                                </li>
-                                <li class="weather-item">
-                                    <figure>
-                                        <img src="assets/images/arrow.png" alt="right-arrow-icon">
-                                    </figure>
-                                    <p>Accusantium Lorem ipsum dolor sit amet</p>
-                                </li>
-                                <li class="weather-item">
-                                    <figure>
-                                        <img src="assets/images/arrow.png" alt="right-arrow-icon">
-                                    </figure>
-                                    <p>Accusantium Lorem ipsum dolor sit amet</p>
-                                </li>
-                                <li class="weather-item">
-                                    <figure>
-                                        <img src="assets/images/arrow.png" alt="right-arrow-icon">
-                                    </figure>
-                                    <p>Accusantium Lorem ipsum dolor sit amet</p>
-                                </li>
-                                <li class="weather-item">
-                                    <figure>
-                                        <img src="assets/images/arrow.png" alt="right-arrow-icon">
-                                    </figure>
-                                    <p>Accusantium Lorem ipsum dolor sit amet</p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="awesome-photos">
-                            <ul class="awesome-gallery">
-                                <li class="awesome-gallery-item">
-                                    <img src="assets/images/photo-2.jpg" alt="Awesome-imgae-1">
-                                </li>
-                                <li class="awesome-gallery-item">
-                                    <img src="assets/images/thumb-2.jpg" alt="Awesome-imgae-2">
-                                </li>
-                                <li class="awesome-gallery-item">
-                                    <img src="assets/images/thumb-3.jpg" alt="Awesome-imgae-3">
-                                </li>
-                                <li class="awesome-gallery-item">
-                                    <img src="assets/images/photo-5.jpg" alt="Awesome-imgae-4">
-                                </li>
-                                <li class="awesome-gallery-item">
-                                    <img src="assets/images/photo-3.jpg" alt="Awesome-imgae-5">
-                                </li>
-                                <li class="awesome-gallery-item">
-                                    <img src="assets/images/thumb-6.jpg" alt="Awesome-imgae-6">
-                                </li>
-                                <li class="awesome-gallery-item">
-                                    <img src="assets/images/thumb-7.jpg" alt="Awesome-imgae-7">
-                                </li>
-                                <li class="awesome-gallery-item">
-                                    <img src="assets/images/thumb-8.jpg" alt="Awesome-imgae-8">
-                                </li>
-                                <li class="awesome-gallery-item">
-                                    <img src="assets/images/thumb-9.jpg" alt="Awesome-imgae-9">
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <div class="wrapper">
+                        <ul class="features-flex">
+                            <li class="application-features">
+                                <h1>Application features</h1>
+                                <ul class="application-feature-content">
+                                    <li class="application-feature-item">
+                                        <figure>
+                                            <img src="assets/images/arrow.png" alt="Right Arrow">
+                                        </figure>
+                                        <div class="app-info">
+                                            <p class="bold-text">Natus Lorem ipsum dolor sit</p>
+                                            <p>Doloremque Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, unde numquam.</p>
+                                        </div>
+                                    </li>
+                                    <li class="application-feature-item">
+                                        <figure>
+                                            <img src="assets/images/arrow.png" alt="Right Arrow">
+                                        </figure>
+                                        <div class="app-info">
+                                            <p class="bold-text">Natus Lorem ipsum dolor sit</p>
+                                            <p>Doloremque Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, unde numquam.</p>
+                                        </div>
+                                    </li>
+                                    <li class="application-feature-item">
+                                        <figure>
+                                            <img src="assets/images/arrow.png" alt="Right Arrow">
+                                        </figure>
+                                        <div class="app-info">
+                                            <p class="bold-text">Natus Lorem ipsum dolor sit</p>
+                                            <p>Doloremque Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, unde numquam.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="weather-analysis">
+                                <h1>Weather analysis</h1>
+                                <ul class="weather-content">
+                                    <li class="weather-item">
+                                        <figure>
+                                            <img src="assets/images/arrow.png" alt="right-arrow-icon">
+                                        </figure>
+                                        <p>Accusantium Lorem ipsum dolor sit amet</p>
+                                    </li>
+                                    <li class="weather-item">
+                                        <figure>
+                                            <img src="assets/images/arrow.png" alt="right-arrow-icon">
+                                        </figure>
+                                        <p>Accusantium Lorem ipsum dolor sit amet</p>
+                                    </li>
+                                    <li class="weather-item">
+                                        <figure>
+                                            <img src="assets/images/arrow.png" alt="right-arrow-icon">
+                                        </figure>
+                                        <p>Accusantium Lorem ipsum dolor sit amet</p>
+                                    </li>
+                                    <li class="weather-item">
+                                        <figure>
+                                            <img src="assets/images/arrow.png" alt="right-arrow-icon">
+                                        </figure>
+                                        <p>Accusantium Lorem ipsum dolor sit amet</p>
+                                    </li>
+                                    <li class="weather-item">
+                                        <figure>
+                                            <img src="assets/images/arrow.png" alt="right-arrow-icon">
+                                        </figure>
+                                        <p>Accusantium Lorem ipsum dolor sit amet</p>
+                                    </li>
+                                    <li class="weather-item">
+                                        <figure>
+                                            <img src="assets/images/arrow.png" alt="right-arrow-icon">
+                                        </figure>
+                                        <p>Accusantium Lorem ipsum dolor sit amet</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="awesome-photos">
+                                <ul class="awesome-gallery">
+                                    <li class="awesome-gallery-item">
+                                        <img src="assets/images/thumb-1.jpg" alt="Awesome-imgae-1">
+                                    </li>
+                                    <li class="awesome-gallery-item">
+                                        <img src="assets/images/thumb-2.jpg" alt="Awesome-imgae-2">
+                                    </li>
+                                    <li class="awesome-gallery-item">
+                                        <img src="assets/images/thumb-3.jpg" alt="Awesome-imgae-3">
+                                    </li>
+                                    <li class="awesome-gallery-item">
+                                        <img src="assets/images/thumb-4.jpg" alt="Awesome-imgae-4">
+                                    </li>
+                                    <li class="awesome-gallery-item">
+                                        <img src="assets/images/thumb-5.jpg" alt="Awesome-imgae-5">
+                                    </li>
+                                    <li class="awesome-gallery-item">
+                                        <img src="assets/images/thumb-6.jpg" alt="Awesome-imgae-6">
+                                    </li>
+                                    <li class="awesome-gallery-item">
+                                        <img src="assets/images/thumb-7.jpg" alt="Awesome-imgae-7">
+                                    </li>
+                                    <li class="awesome-gallery-item">
+                                        <img src="assets/images/thumb-8.jpg" alt="Awesome-imgae-8">
+                                    </li>
+                                    <li class="awesome-gallery-item">
+                                        <img src="assets/images/thumb-9.jpg" alt="Awesome-imgae-9">
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </section>
                 <!--section features end   -->
             </main>
