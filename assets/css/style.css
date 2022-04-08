@@ -95,6 +95,11 @@ li {
   list-style-type: none;
 }
 /* Common styling */
+h1 {
+  color: #FBFBFB;
+  font-size: 30px;
+}
+
 .grey { color: #666; }
 .cap { text-transform: capitalize; }
 .up { text-transform: uppercase; }
@@ -234,6 +239,7 @@ header .wrapper {
   border-bottom-right-radius: 10px;
   background-color: #323544;
 }
+
 .current-day {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -241,6 +247,7 @@ header .wrapper {
   justify-content: space-between;
   background-color: #2D303D;
 }
+
 .current-day p { 
   padding: 9px 1%;
   color: #BCBEC5;
@@ -291,8 +298,48 @@ header .wrapper {
 }
 
 .live-camera {
-  margin-top: 18.5%;
+  background-color: #1E202B;
+  padding-top: 18.5%;
 }
+
+.cards {
+  display: flex;
+  margin: -25px 0 0 -25px;
+}
+
+.card-item { 
+  margin: 25px 0 0 25px; 
+  position: relative;
+}
+
+.card-img {
+  max-width: 233px;
+  max-height: 164px;
+}
+
+.card-img img { border-radius: 5px;}
+.modal-btn {
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-content { padding: 18px 0 90px; }
+
+.card-content h3 { 
+  padding-bottom: 10px;
+  color: #FFF;
+  font-size: 15px;
+}
+
+.card-content p {
+  font-size: 11px;
+  color: #7A7C86;
+}
+
 /*=================================
   main styling ends here
 =================================*/
