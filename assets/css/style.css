@@ -318,6 +318,8 @@ header .wrapper {
 }
 
 .card-img img { border-radius: 5px;}
+.card-content { padding: 18px 0 90px; }
+
 .modal-btn {
   border: none;
   background: transparent;
@@ -327,7 +329,6 @@ header .wrapper {
   transform: translate(-50%, -50%);
 }
 
-.card-content { padding: 18px 0 90px; }
 
 .card-content h3 { 
   padding-bottom: 10px;
@@ -340,23 +341,25 @@ header .wrapper {
   color: #7A7C86;
 }
 
-.placeholder {
-  background-color: #262936;
-}
+.placeholder { background-color: #262936; }
+.placeholder-content p:last-of-type { padding: 21px 0 8px; }
+.placeholder-content figure img { width: inherit;}
 
 .placeholder-rows { 
-  display: flex;
-  gap: 21px;
+  display: flex; 
+  margin: -28px 0 0 -28px;
 }
 
 .placeholder-item { 
+  flex-basis: 30%;
   padding: 62px 0;
   display: flex;
+  margin: 28px 0 0 28px;
 }
 
 .placeholder-item p {
   padding-right: 10%;
-  font-size: 20px;
+  font-size: 21px;
   color: #389AD8;
 }
 
@@ -366,17 +369,11 @@ header .wrapper {
 }
 
 .placeholder-content .bold-text { 
-  /* padding-bottom: 21px; */
   color: #FFFFFF;
   font-size: 12px;
   font-weight: 1000;
 }
 
-.placeholder-content p:last-of-type {
-  padding: 21px 0 8px;
-}
-
-.placeholder-content figure img { width: inherit;}
 
 /*=================================
   main styling ends here
