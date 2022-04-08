@@ -95,11 +95,6 @@ li {
   list-style-type: none;
 }
 /* Common styling */
-h1 {
-  color: #FBFBFB;
-  font-size: 30px;
-}
-
 .grey { color: #666; }
 .cap { text-transform: capitalize; }
 .up { text-transform: uppercase; }
@@ -302,6 +297,11 @@ header .wrapper {
   padding-top: 18.5%;
 }
 
+.live-camera .wrapper h1 {
+  color: #FBFBFB;
+  font-size: 30px;
+}
+
 .cards {
   display: flex;
   margin: -25px 0 0 -25px;
@@ -363,16 +363,77 @@ header .wrapper {
   color: #389AD8;
 }
 
-.placeholder-content p {
+
+.small-txt {
   color: #868991;
   font-size: 13px;
 }
 
+.bold-text,
 .placeholder-content .bold-text { 
   color: #FFFFFF;
   font-size: 12px;
   font-weight: 1000;
 }
+
+.features {
+  padding-top: 63px;
+  background-color: #1E202B;
+}
+
+.features-flex { 
+  display: flex; 
+  justify-content: space-between;
+  margin: -27px 0 0 -27px;
+}
+
+.application-features,
+.weather-analysis,
+.awesome-photos {
+  flex-basis: 33%;
+  margin: 27px 0 0 27px;
+}
+
+.awesome-gallery,
+.weather-item,
+.application-feature-item { 
+  display: flex;
+  align-items: baseline;
+}
+
+.awesome-gallery {
+  flex-wrap: wrap;
+  margin: -10px 0 0 -10px;
+}
+
+.awesome-gallery-item {
+  max-width: 100px;
+  max-height: 73px;
+  margin: 10px 0 0 10px;
+}
+
+.weather-analysis figure img,
+.application-feature-item figure img { width: inherit;}
+
+.feature-h1 {
+  padding-bottom: 15px;
+  color: #FCFCFC;
+  font-size: 31px;
+}
+
+.app-info .small-txt { padding: 17px 0 13px; }
+
+.weather-item p {
+  font-size: 12px;
+  color: #B1B2B5;
+}
+
+.weather-item { 
+  padding: 9px 0;
+  border-bottom: 1px solid #2F313B;
+ }
+
+ .weather-item figure { padding-right: 2%;}
 
 
 /*=================================
