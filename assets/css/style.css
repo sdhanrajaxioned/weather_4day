@@ -210,10 +210,13 @@ header .wrapper {
 }
 
 .banner{position: relative;}
-
 .hide { display: none;}
 .weather-container img { width: 80px;}
-/* .weather-container { position: absolute;} */
+.icons-container { padding-bottom: 8px; }
+.additional-info { padding-bottom: 25px;}
+.additional-info img { width: inherit;}
+.additional-info { display: flex;}
+.compass-container { padding-left: 1%; }
 
 .weather-container { 
   position: absolute;
@@ -249,7 +252,6 @@ header .wrapper {
   font-size: 19px;
 }
 
-.icons-container { padding-bottom: 8px; }
 
 .temperature-icon { 
   display: flex; 
@@ -268,13 +270,6 @@ header .wrapper {
   padding: 11px 0;
 }
 
-.additional-info { padding-bottom: 25px;}
-
-.additional-info img { width: inherit;}
-
-.additional-info {
-  display: flex;
-}
 
 .humidity-container,
 .wind-container,
@@ -290,15 +285,14 @@ header .wrapper {
   font-size: 12px;
 }
 
-
-
 .wind-container {
   padding-left: 4.5%;
   flex-basis: 16%;
 }
 
-.compass-container { padding-left: 1%; }
-
+.live-camera {
+  margin-top: 18.5%;
+}
 /*=================================
   main styling ends here
 =================================*/
