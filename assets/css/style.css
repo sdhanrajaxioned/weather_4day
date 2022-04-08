@@ -340,6 +340,44 @@ header .wrapper {
   color: #7A7C86;
 }
 
+.placeholder {
+  background-color: #262936;
+}
+
+.placeholder-rows { 
+  display: flex;
+  gap: 21px;
+}
+
+.placeholder-item { 
+  padding: 62px 0;
+  display: flex;
+}
+
+.placeholder-item p {
+  padding-right: 10%;
+  font-size: 20px;
+  color: #389AD8;
+}
+
+.placeholder-content p {
+  color: #868991;
+  font-size: 13px;
+}
+
+.placeholder-content .bold-text { 
+  /* padding-bottom: 21px; */
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 1000;
+}
+
+.placeholder-content p:last-of-type {
+  padding: 21px 0 8px;
+}
+
+.placeholder-content figure img { width: inherit;}
+
 /*=================================
   main styling ends here
 =================================*/
