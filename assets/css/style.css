@@ -363,7 +363,7 @@ header .wrapper {
   margin: 28px 0 0 28px;
 }
 
-.placeholder-item p {
+.blue-txt{
   padding-right: 10%;
   font-size: 21px;
   color: #389AD8;
@@ -385,7 +385,7 @@ header .wrapper {
 
 /*features section styling starts here */
 .features {
-  padding-top: 63px;
+  padding: 63px 0;
   background-color: #1E202B;
 }
 
@@ -394,6 +394,8 @@ header .wrapper {
   justify-content: space-between;
   margin: -27px 0 0 -27px;
 }
+
+.application-feature-item figure { padding-right: 5%;}
 
 .application-features,
 .weather-analysis,
@@ -410,8 +412,9 @@ header .wrapper {
 }
 
 .awesome-gallery {
-  flex-wrap: wrap;
+  padding-top: 6px;
   margin: -10px 0 0 -10px;
+  flex-wrap: wrap;
 }
 
 .awesome-gallery-item {
@@ -424,6 +427,7 @@ header .wrapper {
 .application-feature-item figure img { width: inherit;}
 .app-info .small-txt { padding: 17px 0 13px; }
 .weather-item figure { padding-right: 2%;}
+.weather-item:last-child { border-bottom: none; }
 
 .feature-h1 {
   padding-bottom: 15px;
@@ -440,6 +444,7 @@ header .wrapper {
   padding: 9px 0;
   border-bottom: 1px solid #2F313B;
 }
+
 /*placeholder section styling ends here */
 
 
