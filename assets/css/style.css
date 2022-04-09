@@ -167,6 +167,7 @@ header .wrapper {
 /*=================================
   main styling starts here
 =================================*/
+/* Banner styling starts here */
 .banner {
   padding: 62px 0 197px;
   background: url(/assets/images/banner.png);
@@ -291,7 +292,9 @@ header .wrapper {
   padding-left: 4.5%;
   flex-basis: 16%;
 }
+/* Banner styling ends here */
 
+/* live camera section styling starts here */
 .live-camera {
   background-color: #1E202B;
   padding-top: 18.5%;
@@ -340,6 +343,9 @@ header .wrapper {
   font-size: 11px;
   color: #7A7C86;
 }
+/* live camera section styling ends here */
+
+/*placeholder section styling starts here */
 
 .placeholder { background-color: #262936; }
 .placeholder-content p:last-of-type { padding: 21px 0 8px; }
@@ -375,7 +381,9 @@ header .wrapper {
   font-size: 12px;
   font-weight: 1000;
 }
+/*placeholder section styling ends here */
 
+/*features section styling starts here */
 .features {
   padding-top: 63px;
   background-color: #1E202B;
@@ -414,14 +422,14 @@ header .wrapper {
 
 .weather-analysis figure img,
 .application-feature-item figure img { width: inherit;}
+.app-info .small-txt { padding: 17px 0 13px; }
+.weather-item figure { padding-right: 2%;}
 
 .feature-h1 {
   padding-bottom: 15px;
   color: #FCFCFC;
   font-size: 31px;
 }
-
-.app-info .small-txt { padding: 17px 0 13px; }
 
 .weather-item p {
   font-size: 12px;
@@ -431,9 +439,8 @@ header .wrapper {
 .weather-item { 
   padding: 9px 0;
   border-bottom: 1px solid #2F313B;
- }
-
- .weather-item figure { padding-right: 2%;}
+}
+/*placeholder section styling ends here */
 
 
 /*=================================
