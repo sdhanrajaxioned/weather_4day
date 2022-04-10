@@ -195,6 +195,7 @@ header .wrapper {
   font-size: 12px;
 }
 
+.subscribe-btn:hover,
 .find-btn:hover {
   color: #389AD8;
   background-color: #EEE;
@@ -312,16 +313,16 @@ header .wrapper {
 
 .cards {
   display: flex;
-  margin: -25px 0 0 -25px;
+  margin: -32px 0 0 -32px;
 }
 
 .card-item { 
-  margin: 25px 0 0 25px; 
+  margin: 32px 0 0 32px; 
   position: relative;
 }
 
 .card-img {
-  max-width: 233px;
+  max-width: 244px;
   max-height: 164px;
 }
 
@@ -332,7 +333,7 @@ header .wrapper {
   border: none;
   background: transparent;
   position: absolute;
-  top: 26%;
+  top: 27.5%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -384,7 +385,7 @@ header .wrapper {
 .placeholder-content .bold-text { 
   color: #FFFFFF;
   font-size: 12px;
-  font-weight: 1000;
+  font-weight: 900;
 }
 /*placeholder section styling ends here */
 
@@ -423,8 +424,8 @@ header .wrapper {
 }
 
 .awesome-gallery-item {
-  max-width: 100px;
-  max-height: 73px;
+  max-width: 105px;
+  max-height: 75px;
   margin: 10px 0 0 10px;
 }
 
@@ -465,7 +466,7 @@ header .wrapper {
   footer styling starts here
 =================================*/ 
 footer {
-  padding: 47px 0 65px;
+  padding: 47px 0 62px;
   background-color: #262936;
 }
 
@@ -475,10 +476,8 @@ footer {
 }
 
 .subscribe { flex-basis: 64.5%;}
-
-.email-container {
-  position: relative;
-}
+.email-container { position: relative;}
+.social-links { padding-right: 9.2%;}
 
 .subscribe-btn { 
   padding: 14px 21px;
@@ -501,6 +500,7 @@ footer {
   background-color: #1E202B;
 }
 
+
 .social-links li a { 
   width: 36px;
   height: 36px;
@@ -510,11 +510,15 @@ footer {
   text-indent: -9999px; 
 }
 
+.facebook::after { content: "\f39e"; }
+.twitter::after {content: "\f099";}
+.google::after {content: "\f0d5";}
+.pintrest::after {content: "\f0d2";}
+
 .facebook::after,
 .twitter::after,
 .google::after,
 .pintrest::after {
-  content: "\f39e";
   padding-top: 30%;
   height: 100%;
   width: 100%;
@@ -525,7 +529,7 @@ footer {
   float: right;
 }
 
-.facebook:hover::after {
+.social-links li a::after {
   color: #FFF;
   transition: .4s ease-in;
 }
@@ -533,6 +537,12 @@ footer {
 .social-links li a:hover {
   background-color: #389AD8;
   transition: .4s ease-in;
+}
+
+footer .wrapper p {
+  padding-top: 31px;
+  color: #92949D;
+  font-size: 13px;
 }
  /*=================================
   footer styling ends here
