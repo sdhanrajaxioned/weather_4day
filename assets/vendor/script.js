@@ -5,12 +5,10 @@ $(document).ready(function () {
   var defaultCity = 'mumbai';
   var cityName = $('.city');
   var temp = $('.temp');
-  var icons = $('.icons-container img');
-  console.log(icons);
   var humidity = $('.humidity');
   var windSpeed = $('.wind');
   var compass = $('.compass');
-  var findBtn = $('#find-btn')
+  var findBtn = $('#find-btn');
 
   //function to display weather which takes city as mumbai on load.
   function getWeather(city){
@@ -20,16 +18,18 @@ $(document).ready(function () {
       data: "JSON",
       success: function(response) {
         displayDate();
-        displayWeatherIcon(response);
         var cityData = response['name'];
         var tempData = response['main']['temp'];
         var tempDataC = (tempData - 273.15).toFixed(0);
+        var weatherData = response['weather'][0]['main'];
         var windData = response['wind']['speed'];
         var windDataKmHr = (windData * 3.6).toFixed(2);
         var humidityData = response['main']['humidity'];
         var directionData = response['wind']['deg'];
         var compassData = degreeToDirection(directionData);
-
+        
+        displayWeatherIcon(weatherData);
+        
         cityName.html(cityData);
         temp.html(tempDataC + '&deg; C');
         humidity.html(humidityData + ' %' );
@@ -39,19 +39,25 @@ $(document).ready(function () {
     });
   }
 
-  function displayWeatherIcon(data) {
-    var mainData = (data['weather'][0]['main']).toLowerCase();
-    icons.each(function() {
-      // icon.removeClass('hide');
-      var iconData = $(this).data('icon');
-      var icon = $(this);
-      if(iconData === mainData)
-        icon.removeClass('hide');
-      else if(mainData === 'smoke' || mainData === 'haze')
-        $('.icon-last').removeClass('hide');
-      else
-        icon.addClass('hide');
-    })
+  function getweatherIconPath(weatherData) {
+    if(weatherData === 'Drizzle')
+      return 'assets/images/icons/icon-13.svg';
+    if(weatherData === 'Thunderstorm')
+      return 'assets/images/icons/icon-12.svg';
+    if(weatherData === 'Rain')
+      return 'assets/images/icons/icon-14.svg';
+    if(weatherData === 'Clear')
+      return 'assets/images/icons/icon-1.svg';
+    if(weatherData === 'Clouds')
+      return 'assets/images/icons/icon-5.svg';
+    if(weatherData === 'Smoke' || weatherData === 'Haze' || weatherData === 'Mist')
+      return 'assets/images/icons/icon-7.svg';
+  }
+
+  function displayWeatherIcon(weatherData){
+    getweatherIconPath(weatherData);
+    var path = getweatherIconPath(weatherData);
+    $('.icons-container').html(`<img src=${path} alt='${weatherData} icon'>`)
   }
 
   //converts weather wind degrees to compass directions
