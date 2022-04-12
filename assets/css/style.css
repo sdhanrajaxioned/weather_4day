@@ -165,7 +165,7 @@ header .wrapper {
 /* Banner styling starts here */
 .banner {
   padding: 62px 0 197px;
-  background: url(/assets/images/banner.png);
+  background: url('/weather_4day/assets/images/banner.png');
 }
 
 .input-container {
