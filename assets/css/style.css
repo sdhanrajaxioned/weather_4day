@@ -732,9 +732,31 @@ body {
   font-size: 12px;
 }
 
+/* link section styling starts here*/
 .links li a { color: #A7A9B2;}
 .links li a:hover { color: #389AD8;}
 .links li {padding: 0 2px;}
+/* link section styling ends here*/
+
+/* photos section styling starts here*/
+.photos { padding-top: 62px; }
+
+.photo-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo-card-item {
+  max-width: 490px;
+  display: flex;
+}
+
+.photo-card-img {
+  max-width: 246px;
+  max-height: 168px;
+}
+
+/* photos section styling ends here*/
 
 /*media query for 995px starts here*/
 @media only screen and (max-width: 680px) {
