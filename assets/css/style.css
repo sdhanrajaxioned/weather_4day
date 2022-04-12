@@ -474,6 +474,7 @@ footer {
 .footer-flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .subscribe { flex-basis: 63.5%;}
@@ -739,22 +740,54 @@ body {
 /* link section styling ends here*/
 
 /* photos section styling starts here*/
-.photos { padding-top: 62px; }
+.photos { padding: 62px 0 86px; }
 
 .photo-cards {
   display: flex;
   flex-wrap: wrap;
+  gap: 26px;
 }
 
 .photo-card-item {
   max-width: 490px;
+  border-radius: 10px;
   display: flex;
+  background-color: #262936;
 }
 
-.photo-card-img {
-  max-width: 246px;
-  max-height: 168px;
+.photo-card-img { max-width: 246px; }
+.photo-card-content { padding: 17px 0 0 3.5% }
+.ratings { display: flex;} 
+.star { text-indent: -9999px; }
+.star.active::after { color: #1E202B;}
+
+.photo-card-content h3 { 
+  color: #FFF;
+  font-size: 14px;
 }
+
+.photo-card-content p {
+  padding-top: 10px;
+  color: #7A7C86;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.star::after {
+  content: "\f005";
+  padding-top: 8px;
+  color: #389AD8;
+  font-size: 12px;
+  font-family: "fontAwesome";
+  float: right;
+  text-indent: 0;
+}
+
+.photo-card-img img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
 
 /* photos section styling ends here*/
 
