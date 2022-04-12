@@ -537,7 +537,6 @@ footer {
   transition: .4s ease-in;
 }
 
-
 .social-links li a:hover {
   background-color: #389AD8;
   transition: .4s ease-in;
@@ -719,6 +718,23 @@ footer .wrapper p {
   .footer-flex { flex-direction: column; }
   .social-links { padding-top: 30px;}
 }
+
+/* Styling for photos page */
+body {
+  background-color: #1E202B;
+}
+
+.links {
+  padding: 17px 25px;
+  border-radius: 50px;
+  background-color: #262936;
+  color: #FFF;
+  font-size: 12px;
+}
+
+.links li a { color: #A7A9B2;}
+.links li a:hover { color: #389AD8;}
+.links li {padding: 0 2px;}
 
 /*media query for 995px starts here*/
 @media only screen and (max-width: 680px) {
