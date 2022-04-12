@@ -102,6 +102,12 @@ li {
 .bold { font-weight: bold; }
 .transition { transition: 1s all ease; }
 
+.error-msg {
+  position: absolute;
+  font-size: 14px;
+  color: #FF2400;
+}
+
 /*for wrapper*/
 .wrapper {
   max-width: 1350px;
@@ -143,20 +149,6 @@ header .wrapper {
 .nav-links {
   display: flex;
   justify-content: space-between;
-}
-
-.nav-links li a {
-  padding: 5px 22px;
-  border : 2px solid #1E202B;
-  border-radius: 50px;
-  color: #FFF;
-  font-size: 13px;
-}
-
-.nav-links li a:hover,
-.nav-links li a.active {
-  border : 2px solid #389AD8;
-  color: #389AD8;
 }
 
 .bar {
@@ -218,10 +210,17 @@ header .wrapper {
 .hide { display: none;}
 .weather-container img { width: 80px;}
 .icons-container { padding-bottom: 8px; }
-.additional-info { padding-bottom: 25px;}
 .additional-info img { width: inherit;}
-.additional-info { display: flex;}
-.compass-container { padding-left: 1%; }
+
+.additional-info { 
+  padding-bottom: 25px;
+  display: flex;
+}
+
+.wind-container,
+.compass-container {
+  padding-left: 5%;
+}
 
 .weather-container { 
   position: absolute;
@@ -259,7 +258,6 @@ header .wrapper {
   font-size: 19px;
 }
 
-
 .temperature-icon { 
   display: flex; 
   align-items: center;
@@ -284,18 +282,18 @@ header .wrapper {
   display: flex;
 }
 
+
 .wind,
 .humidity,
 .compass { 
   padding-left: 6%; 
   color: #7F818B;
   font-size: 12px;
+  align-self: center;
 }
 
-.wind-container {
-  padding-left: 4.5%;
-  flex-basis: 16%;
-}
+.additional-info figure { align-self: center;}
+
 /* Banner styling ends here */
 
 /* live camera section styling starts here */
@@ -573,6 +571,12 @@ footer .wrapper p {
 
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
+
+  .temperature-icon {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   .live-camera .wrapper {
     display: flex;
     flex-direction: column;
@@ -601,9 +605,17 @@ footer .wrapper p {
 
 /*media query for 767px starts here*/
 @media screen and (max-width: 767px) {
+  .hamburger.active { border-color: #389AD8; }
+  .navbar.show { display: block;}
+  .bar.active { color: #389AD8;}
+  .hamburger .bar:nth-child(1) { margin-top: 43.5%;}
+  .weather-container { min-width: 306px;}
+
   .wrapper {
     max-width: 767px;
     width: 96%;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   header .wrapper {
@@ -615,8 +627,8 @@ footer .wrapper p {
   .bar.active { background-color: #389AD8; }
 
   .hamburger {
-    height: 112px;
-    width: 107px;
+    height: 60px;
+    width: 57px;
     border: 3px solid transparent;
     border-radius: 47%;
     display: block;
@@ -634,54 +646,53 @@ footer .wrapper p {
   }
 
   .bar {
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
+    width: 12px;
+    height: 2px;
+    margin: 2px auto;
     display: block;
     background-color: #FFF;
     transition: all 0.3s ease-in-out;
   }
 
-  
-  .hamburger.active .bar:nth-child(1) { 
-    margin-top: 43.5%;
-    transform: translateY(8px) rotate(45deg);
+  .navbar {
+    margin: 30px 0 17px;
+    border-radius: 10px;
+    display: none;
+    flex-basis: 100%;
+    background-color: #323544;
+    text-align: center;
   }
   
-  .hamburger .bar:nth-child(1) { margin-top: 43.5%;}
-  .hamburger.active .bar:nth-child(2) { opacity: 0;}
-  .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg);}
-  .navbar {display: none;}
-  .weather-container { min-width: 306px;}
-
   .nav-links {
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
   }
   
-  .nav-links li a {
-    padding: 5px 22px;
-    border : 2px solid #1E202B;
-    border-radius: 50px;
+  .nav-links li { border-bottom: 1px solid #3C3F4B; }
+  .nav-links li:last-child {border-bottom: none;}
+  .nav-links li a.active { color: #389AD8; }
+  .nav-links li a { 
+    padding: 20px 15px; 
     color: #FFF;
-    font-size: 13px;
+    font-size: 14px;
   }
-
+  
+  
   .cards {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
+  
   .card-content { padding: 27px 0 4px;}
   .modal-btn { top: 33.3%; }
   .live-camera { padding-top: 240px}
-
+  
   .live-camera .wrapper h1 { 
     padding-bottom: 23px;
     text-align: center;
   }
-
+  
   .placeholder-rows { 
     margin: 0;
     flex-direction: column; 
@@ -708,7 +719,6 @@ footer .wrapper p {
   .awesome-gallery { max-width: 70%;}
 }
 
-
 /*media query for 540px starts here*/
 @media only screen and (max-width: 540px){
   .awesome-gallery { max-width: 80%;}
@@ -722,4 +732,21 @@ footer .wrapper p {
 /*media query for 36px starts here*/
 @media only screen and (max-width: 365px){
   .awesome-gallery-item{ max-width: 92px;}
+}
+
+/* media query for giving links hover effect over 767px */
+@media only screen and (min-width: 767px){
+  .nav-links li a {
+    padding: 5px 22px;
+    border : 2px solid #1E202B;
+    border-radius: 50px;
+    color: #FFF;
+    font-size: 13px;
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a.active {
+    border : 2px solid #389AD8;
+    color: #389AD8;
+  }
 }

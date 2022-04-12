@@ -8,10 +8,9 @@ $(document).ready(function () {
   var humidity = $('.humidity');
   var windSpeed = $('.wind');
   var compass = $('.compass');
-  var findBtn = $('#find-btn');
   var cityField = $('#city_field');
+  var findBtn = $('#find-btn');
   var subscribeBtn = $('.subscribe-btn');
-  var errorMsg = $('.error-msg');
   
   // function to display weather which takes city as mumbai on load.
   function getWeather(city){
