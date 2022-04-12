@@ -11,7 +11,7 @@ $(document).ready(function () {
   var cityField = $('#city_field');
   var findBtn = $('#find-btn');
   var subscribeBtn = $('.subscribe-btn');
-  
+
   // function to display weather which takes city as mumbai on load.
   function getWeather(city){
     $.ajax({
@@ -34,7 +34,7 @@ $(document).ready(function () {
 
         cityName.html(cityData);
         temp.html(tempDataC + '&deg; C');
-        humidity.html(humidityData + ' %' );
+        humidity.html(humidityData + '%' );
         windSpeed.html(windDataKmHr + 'km/hr')
         compass.html(compassData);
         cityField.removeClass('invalid');
@@ -151,4 +151,13 @@ $(document).ready(function () {
   }
 
   subscribeBtn.click(validateSubscribeForm);
+
+  // Hamburger menu 
+  $('.hamburger').click(function (){
+    $('.hamburger').toggleClass('active');
+    $('.bar').toggleClass('active');
+    $('.navbar').slideToggle(function() {
+      $('.navbar').toggleClass('show');
+    });
+  })
 });
