@@ -138,6 +138,8 @@ header .wrapper {
   color: #676973;
 }
 
+.company-info h3 a { color: #FFF; }
+
 .company-info h3 { 
   padding: 3px 0 8px;
   font-size: 13px;
@@ -154,20 +156,13 @@ header .wrapper {
   text-indent: -9999px;
 }
 /*=================================
-Header styling ends here
+  Header styling ends here
 =================================*/  
 
 /*=================================
-main styling starts here
+  main styling starts here
 =================================*/
 /* Banner styling starts here */
-.banner{position: relative;}
-.hide { display: none;}
-.weather-container img { width: 80px;}
-.icons-container { padding-bottom: 8px; }
-.additional-info img { width: inherit;}
-.additional-info figure { align-self: center; }
-
 .banner {
   padding: 62px 0 197px;
   background: url(/assets/images/banner.png);
@@ -214,6 +209,11 @@ input:focus { outline: none;}
   font-size: 13px;
 }
 
+.banner{position: relative;}
+.hide { display: none;}
+.weather-container img { width: 80px;}
+.icons-container { padding-bottom: 8px; }
+.additional-info img { width: inherit;}
 
 .additional-info { 
   padding-bottom: 25px;
@@ -278,11 +278,13 @@ input:focus { outline: none;}
   padding: 11px 0;
 }
 
+
 .humidity-container,
 .wind-container,
 .compass-container {
   display: flex;
 }
+
 
 .wind,
 .humidity,
@@ -292,11 +294,12 @@ input:focus { outline: none;}
   font-size: 12px;
   align-self: center;
 }
+
+.additional-info figure { align-self: center;}
+
 /* Banner styling ends here */
 
 /* live camera section styling starts here */
-.card-img img { border-radius: 5px;}
-
 .live-camera {
   padding: 237px 0 100px;
   background-color: #1E202B;
@@ -323,6 +326,8 @@ input:focus { outline: none;}
   max-height: 164px;
 }
 
+.card-img img { border-radius: 5px;}
+
 .modal-btn {
   border: none;
   background: transparent;
@@ -331,6 +336,7 @@ input:focus { outline: none;}
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 
 .card-content h3 { 
   padding: 20px 0 10px;
@@ -345,6 +351,7 @@ input:focus { outline: none;}
 /* live camera section styling ends here */
 
 /*placeholder section styling starts here */
+
 .placeholder { background-color: #262936; }
 .placeholder-content p:last-of-type { padding: 21px 0 8px; }
 .placeholder-content figure img { width: inherit;}
@@ -367,6 +374,7 @@ input:focus { outline: none;}
   color: #389AD8;
 }
 
+
 .small-txt {
   color: #868991;
   font-size: 13px;
@@ -381,8 +389,6 @@ input:focus { outline: none;}
 /*placeholder section styling ends here */
 
 /*features section styling starts here */
-.application-feature-item figure { padding-right: 5%;}
-
 .features {
   padding: 63px 0;
   background-color: #1E202B;
@@ -393,6 +399,8 @@ input:focus { outline: none;}
   justify-content: space-between;
   margin: -27px 0 0 -27px;
 }
+
+.application-feature-item figure { padding-right: 5%;}
 
 .application-features,
 .weather-analysis,
@@ -449,6 +457,8 @@ input:focus { outline: none;}
   border-bottom: 1px solid #2F313B;
 }
 /*placeholder section styling ends here */
+
+
 /*=================================
   main styling ends here
 =================================*/
@@ -456,15 +466,6 @@ input:focus { outline: none;}
 /*=================================
   footer styling starts here
 =================================*/ 
-.subscribe { flex-basis: 64.5%;}
-.email-container { position: relative;}
-.social-links { padding-right: 9.2%;}
-.facebook::after { content: "\f39e"; }
-.twitter::after {content: "\f099";}
-.google::after {content: "\f0d5";}
-.pintrest::after {content: "\f0d2";}
-.social-links li a:hover::after { color: #FFF;}
-
 footer {
   padding: 47px 0 62px;
   background-color: #262936;
@@ -515,6 +516,12 @@ footer {
   text-indent: -9999px; 
 }
 
+.facebook::after { content: "\f39e"; }
+.twitter::after {content: "\f099";}
+.google::after {content: "\f0d5";}
+.pintrest::after {content: "\f0d2";}
+.social-links li a:hover::after { color: #FFF;}
+
 .facebook::after,
 .twitter::after,
 .google::after,
@@ -529,6 +536,7 @@ footer {
   text-indent: 0;
   transition: .4s ease-in;
 }
+
 
 .social-links li a:hover {
   background-color: #389AD8;
@@ -595,13 +603,16 @@ footer .wrapper p {
     margin: 0;
     flex-basis: 42%;
   }
+
+  .modal-btn { top: 30.4%; }
+  .card-content { padding: 10px 0 30px;}
+  .awesome-gallery { max-width: 52%;}
+  .features-flex { flex-direction: column; }
+  .application-feature-item figure { padding-right: 1%; }
 }
 
 /*media query for 767px starts here*/
 @media screen and (max-width: 767px) {
-  .nav-links li { border-bottom: 1px solid #3C3F4B; }
-  .nav-links li:last-child {border-bottom: none;}
-  .nav-links li a.active { color: #389AD8; }
   .hamburger.active { border-color: #389AD8; }
   .navbar.show { display: block;}
   .bar.active { color: #389AD8;}
@@ -666,11 +677,15 @@ footer .wrapper p {
     flex-direction: column;
   }
   
+  .nav-links li { border-bottom: 1px solid #3C3F4B; }
+  .nav-links li:last-child {border-bottom: none;}
+  .nav-links li a.active { color: #389AD8; }
   .nav-links li a { 
     padding: 20px 15px; 
     color: #FFF;
     font-size: 14px;
   }
+  
   
   .cards {
     flex-direction: column;
@@ -692,10 +707,17 @@ footer .wrapper p {
     flex-direction: column; 
   }
   
+  
   .placeholder-item {
     margin: 0;
     padding: 15px 0;
   }
+  
+  .blue-txt{ padding-right: 4%; }
+  .awesome-gallery { max-width: 55%;}
+  .placeholder {padding: 15px 0;}
+  .footer-flex { flex-direction: column; }
+  .social-links { padding-top: 30px;}
 }
 
 /*media query for 995px starts here*/
