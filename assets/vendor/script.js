@@ -9,8 +9,11 @@ $(document).ready(function () {
   var windSpeed = $('.wind');
   var compass = $('.compass');
   var findBtn = $('#find-btn');
-
-  //function to display weather which takes city as mumbai on load.
+  var cityField = $('#city_field');
+  var subscribeBtn = $('.subscribe-btn');
+  var errorMsg = $('.error-msg');
+  
+  // function to display weather which takes city as mumbai on load.
   function getWeather(city){
     $.ajax({
       type: "GET",
@@ -35,7 +38,10 @@ $(document).ready(function () {
         humidity.html(humidityData + ' %' );
         windSpeed.html(windDataKmHr + 'km/hr')
         compass.html(compassData);
-      }
+        cityField.removeClass('invalid');
+        cityField.next().hide();
+      },
+      error: validateCityField
     });
   }
   
@@ -91,7 +97,59 @@ $(document).ready(function () {
   }
   
   findBtn.click(function(e) {
-    e.preventDefault();
+    e.preventDefault()
     getWeather(cityInput.val());
   })
+
+  // form valdiation starts here
+  // validates whether input field is empty
+  function emptyField(input) {
+    input.removeClass('invalid');
+    if(input.val() == ''){
+      input.addClass('invalid');
+      input.next().html('**This field cant be empty!**');
+      input.next().show();
+      return false
+    }
+  }
+
+  // validate cityField 
+  function validateCityField(xhr) {
+    cityField.removeClass('invalid');
+    if(cityField.val() == ''){
+      emptyField(cityField);
+    }
+    else if(xhr.status === 404) {
+      cityField.addClass('invalid');
+      cityField.next().html('**Please enter valid city name!**');
+      cityField.next().show();
+    } 
+  }
+
+  // validates email
+  function validateEmail(emailField, emailReg) {
+    emailField.removeClass('invalid');
+    if(emailField.val() == '') {
+      emptyField(emailField);
+    } else if(!emailReg.test(emailField.val())) {
+      emailField.addClass('invalid');
+      emailField.next().html('**Please enter valid email!**')
+      return false;
+    }
+  }
+
+  function validateSubscribeForm() {
+  var emailField = $('#email');
+  var emailReg = /^[\w]{1,}[\w.+-]{0,}@[\w-]{1,}([.][a-zA-Z]{2,3}|[.][\w-]{2,3}[.][a-zA-Z]{2,3})$/;
+    validateEmail(emailField, emailReg);
+    if($('.subscribe input').hasClass('invalid')) {
+      return false 
+    } else {
+      emailField.next().hide();
+      alert ('Form submitted successfully!');
+      return true
+    }
+  }
+
+  subscribeBtn.click(validateSubscribeForm);
 });
