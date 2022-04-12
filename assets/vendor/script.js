@@ -160,4 +160,11 @@ $(document).ready(function () {
       $('.navbar').toggleClass('show');
     });
   })
+
+  // add active class to current page
+  var navLinks = $('.nav-links li a');
+  
+  navLinks.filter(function() {
+    return this.href == location.href.replace(/#.*/,"");
+  }).addClass('active');
 });
