@@ -29,7 +29,7 @@ $(document).ready(function () {
         var compassData = degreeToDirection(directionData);
         
         displayWeatherIcon(weatherData);
-        
+
         cityName.html(cityData);
         temp.html(tempDataC + '&deg; C');
         humidity.html(humidityData + ' %' );
@@ -38,7 +38,15 @@ $(document).ready(function () {
       }
     });
   }
+  
+  // passing mumbai as default city to getWeather()
+  function defaultWeather(){
+    getWeather(defaultCity);
+  }
 
+  defaultWeather();
+
+  // retrieves img with respect to weather condition
   function getweatherIconPath(weatherData) {
     if(weatherData === 'Drizzle')
       return 'assets/images/icons/icon-13.svg';
@@ -53,7 +61,8 @@ $(document).ready(function () {
     if(weatherData === 'Smoke' || weatherData === 'Haze' || weatherData === 'Mist')
       return 'assets/images/icons/icon-7.svg';
   }
-
+  
+  // Appends weather icon to icons-container
   function displayWeatherIcon(weatherData){
     getweatherIconPath(weatherData);
     var path = getweatherIconPath(weatherData);
@@ -69,11 +78,6 @@ $(document).ready(function () {
     return directions[degrees];
   }
   
-  // passing mumbai as default city to getWeather()
-  function defaultWeather(){
-    getWeather(defaultCity);
-  }
-
   // displays current day date & month 
   function displayDate() {
     var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -90,7 +94,4 @@ $(document).ready(function () {
     e.preventDefault();
     getWeather(cityInput.val());
   })
-  
-  defaultWeather();
-
 });
