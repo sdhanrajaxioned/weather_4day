@@ -159,6 +159,7 @@ $(document).ready(function () {
     $('.navbar').slideToggle(function() {
       $('.navbar').toggleClass('show');
     });
+    $('body').toggleClass('hidden');
   })
 
   // add active class to current page
