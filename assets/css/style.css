@@ -121,11 +121,10 @@ Header styling starts here
 header { background-color: #1E202B; }
 .logo{ padding-right: 6.5%;}
 .logo-container p {font-size: 9px;}
-.navbar { flex-basis: 47.5%;}
+.navbar { flex-basis: 51%;}
 .nav-links li a:hover { transition: all .4s ease-in; }
 .hamburger {display: none;}
-.company-info h3 a { color: #FFF; }
-
+.nav-links li {margin: 0 5px;}
 header .wrapper {
   padding: 40px 0 45px;
   display: flex;
@@ -135,7 +134,7 @@ header .wrapper {
 .logo-container {
   padding-top: 4px;
   display: flex;
-  flex-basis: 17%;
+  flex-basis: 19%;
   color: #676973;
 }
 
@@ -182,8 +181,8 @@ main styling starts here
 .find-btn {
   padding: 13px 36px;
   position: absolute;
-  bottom: 11%;
-  right: 0.5%;
+  bottom: 10.2%;
+  right: -7px;
   border: none;
   border-radius: 50px;
   color: #FFF;
@@ -199,16 +198,19 @@ main styling starts here
 }
 
 #city_field { 
-  line-height: normal;
-  width: 99.7%;
+  padding-left: 10px;
+  width: 100%;
   height: 47px;
   border: none;
   border-radius: 50px;
   background-color: #1E202B;
+  color: #EEE;
 }
 
+input:focus { outline: none;}
+
 ::placeholder {
-  padding-left: 16px;
+  margin: 5px;
   font-size: 13px;
 }
 
@@ -473,25 +475,35 @@ footer {
   justify-content: space-between;
 }
 
+.subscribe { flex-basis: 63.5%;}
+.social-links { padding-right: 9.2%;}
+
+.email-container { 
+  width: 98.5%;
+  position: relative;
+}
+
+
 .subscribe-btn { 
   padding: 14px 21px;
   border: none;
   border-radius: 50px;
   position: absolute;
-  right: 0;
-  bottom: 9%;
+  right: -5px;
+  bottom: 10%;
   color: #FFF;
   background-color: #389AD8;
   font-size: 12px;
 }
 
 #email {
-  line-height: normal;
+  padding-left: 10px;
   width: 100%;
   height: 50px;
   border: none;
   border-radius: 50px;
   background-color: #1E202B;
+  color: #EEE;
 }
 
 .social-links li a { 
@@ -560,12 +572,6 @@ footer .wrapper p {
 
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
-  .modal-btn { top: 30.4%; }
-  .card-content { padding: 10px 0 30px;}
-  .awesome-gallery { max-width: 52%;}
-  .features-flex { flex-direction: column; }
-  .application-feature-item figure { padding-right: 1%; }
-
   .temperature-icon {
     align-items: flex-start;
     flex-direction: column;
@@ -601,11 +607,7 @@ footer .wrapper p {
   .bar.active { color: #389AD8;}
   .hamburger .bar:nth-child(1) { margin-top: 43.5%;}
   .weather-container { min-width: 306px;}
-  .blue-txt{ padding-right: 4%; }
-  .awesome-gallery { max-width: 55%;}
-  .placeholder {padding: 15px 0;}
-  .footer-flex { flex-direction: column; }
-  .social-links { padding-top: 30px;}
+  .input-container { width: 97%; }
 
   .wrapper {
     max-width: 767px;
@@ -619,7 +621,7 @@ footer .wrapper p {
     align-items: center;
   }
 
-  .logo-container { flex-basis: 27%;}
+  .logo-container { flex-basis: 30%;}
   .bar.active { background-color: #389AD8; }
 
   .hamburger {
