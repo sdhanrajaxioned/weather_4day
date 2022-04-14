@@ -103,9 +103,20 @@ li {
 .transition { transition: 1s all ease; }
 
 .error-msg {
+  width: 100%;
+  padding: 4px;
+  border-radius: 50px;
   position: absolute;
-  font-size: 14px;
+  background-color: #FFD2D2;
   color: #FF2400;
+  font-size: 14px;
+}
+
+.error-msg::after {
+  content: "\f057";
+  font-family: "fontAwesome";
+  padding: 0 10px;
+  cursor: pointer;
 }
 
 /*for wrapper*/
@@ -138,7 +149,10 @@ header .wrapper {
   color: #676973;
 }
 
-.company-info h3 a { color: #FFF; }
+.company-info h3 a { 
+  color: #FFF; 
+  white-space: nowrap;
+}
 
 .company-info h3 { 
   padding: 3px 0 8px;
@@ -634,7 +648,7 @@ footer .wrapper p {
 @media only screen and (max-width: 1333px){
   .wrapper {
     max-width: 1024px;
-    width: 90%;
+    width: 95%;
   }
 }
 
@@ -867,6 +881,7 @@ footer .wrapper p {
     border-radius: 50px;
     color: #FFF;
     font-size: 13px;
+    white-space: nowrap;
   }
   
   .nav-links li a:hover,
