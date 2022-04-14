@@ -9,6 +9,7 @@ $(document).ready(function () {
   var windSpeed = $('.wind');
   var compass = $('.compass');
   var cityField = $('#city_field');
+  var errorMsg = $('.error-msg');
   var findBtn = $('#find-btn');
   var subscribeBtn = $('.subscribe-btn');
 
@@ -38,19 +39,15 @@ $(document).ready(function () {
         windSpeed.html(windDataKmHr + 'km/hr')
         compass.html(compassData);
         cityField.removeClass('invalid');
-        cityField.next().hide();
+        errorMsg.slideUp();
       },
       error: validateCityField
     });
   }
-  
+
   // Displays default city weather on page load
   getWeather(defaultCity);
-  // function defaultWeather(){
   
-
-  // defaultWeather();
-
   // retrieves img with respect to weather condition
   function getweatherIconPath(weatherData) {
     if(weatherData === 'Drizzle')
@@ -107,7 +104,7 @@ $(document).ready(function () {
     if(input.val() == ''){
       input.addClass('invalid');
       input.next().html('**This field cant be empty!**');
-      input.next().show();
+      input.next().slideDown();
       return false
     }
   }
@@ -121,7 +118,7 @@ $(document).ready(function () {
     else if(xhr.status === 404) {
       cityField.addClass('invalid');
       cityField.next().html('**Please enter valid city name!**');
-      cityField.next().show();
+      cityField.next().slideDown();
     } 
   }
 
@@ -133,6 +130,7 @@ $(document).ready(function () {
     } else if(!emailReg.test(emailField.val())) {
       emailField.addClass('invalid');
       emailField.next().html('**Please enter valid email!**')
+      emailField.next().slideDown();
       return false;
     }
   }
@@ -144,7 +142,7 @@ $(document).ready(function () {
     if($('.subscribe input').hasClass('invalid')) {
       return false 
     } else {
-      emailField.next().hide();
+      emailField.next().slideUp();
       alert ('Form submitted successfully!');
       return true
     }
@@ -168,4 +166,9 @@ $(document).ready(function () {
   navLinks.filter(function() {
     return this.href == location.href.replace(/#.*/,"");
   }).addClass('active');
+
+  errorMsg.click(function () {
+    $(this).slideUp();
+  })
+
 });
