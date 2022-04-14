@@ -44,12 +44,12 @@ $(document).ready(function () {
     });
   }
   
-  // passing mumbai as default city to getWeather()
-  function defaultWeather(){
-    getWeather(defaultCity);
-  }
+  // Displays default city weather on page load
+  getWeather(defaultCity);
+  // function defaultWeather(){
+  
 
-  defaultWeather();
+  // defaultWeather();
 
   // retrieves img with respect to weather condition
   function getweatherIconPath(weatherData) {
