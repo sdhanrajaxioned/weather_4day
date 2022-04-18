@@ -334,11 +334,14 @@ input:focus { outline: none;}
 .cards { 
   display: flex; 
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
-.card-item { flex-basis: 23%; }
-.card-item:last-of-type { margin-right: 0;}
+.card-item { 
+  flex-basis: 23.4%; 
+  margin: 0 20px 20px 0;
+}
+
+.card-item:nth-child(4n) { margin: 0 0 20px 0;}
 .card-img { position: relative; }
 .card-img img { border-radius: 5px; }
 
@@ -690,6 +693,10 @@ footer .wrapper p {
     flex-basis: 31%;
   }
 
+<<<<<<< HEAD
+=======
+  .card-item:nth-child(even) { margin-right: 0;}
+>>>>>>> feature-css
   .card-item { flex-basis: 48%; }
   .awesome-gallery { justify-content: space-between;}
   .small-txt { padding: 15px 0 15px 7.2%;}
