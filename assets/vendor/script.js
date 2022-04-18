@@ -47,21 +47,23 @@ $(document).ready(function () {
 
   // Displays default city weather on page load
   getWeather(defaultCity);
-  
-  // retrieves img with respect to weather condition
-  function getweatherIconPath(weatherData) {
-    if(weatherData === 'Drizzle')
-      return 'assets/images/icons/icon-13.svg';
-    if(weatherData === 'Thunderstorm')
-      return 'assets/images/icons/icon-12.svg';
-    if(weatherData === 'Rain')
-      return 'assets/images/icons/icon-14.svg';
-    if(weatherData === 'Clear')
-      return 'assets/images/icons/icon-1.svg';
-    if(weatherData === 'Clouds')
-      return 'assets/images/icons/icon-5.svg';
-    if(weatherData === 'Smoke' || weatherData === 'Haze' || weatherData === 'Mist')
-      return 'assets/images/icons/icon-7.svg';
+
+  //retrieves img with respect to weather condition
+  function getweatherIconPath(weatherData) {  
+    switch(true) {
+      case weatherData === 'Drizzle':
+        return 'assets/images/icons/icon-13.svg';
+      case weatherData === 'Thunderstorm':
+        return 'assets/images/icons/icon-12.svg';
+      case weatherData === 'Rain':
+        return 'assets/images/icons/icon-14.svg';
+      case weatherData === 'Clear':
+        return 'assets/images/icons/icon-14.svg';
+      case weatherData === 'Clouds':
+        return 'assets/images/icons/icon-5.svg';
+      default:
+        return 'assets/images/icons/icon-7.svg';
+    }
   }
   
   // Appends weather icon to icons-container
