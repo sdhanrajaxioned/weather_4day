@@ -413,7 +413,6 @@ input:focus { outline: none;}
   text-indent: 0;
 
 }
-
 /*placeholder section styling ends here */
 
 /*features section styling starts here */
@@ -688,12 +687,13 @@ footer .wrapper p {
 @media only screen and (max-width: 995px) {
   .feature-h6 { padding: 10px 0 15px 0;}
   .weather-container { min-width: 420px;}
+  .weather-item:last-child { border-bottom: 1px solid #2F313B; }
+  
   .temperature-icon {
     align-items: flex-start;
     flex-direction: column;
   }
 
-  .weather-item:last-child { border-bottom: 1px solid #2F313B; }
 
   .live-camera .wrapper {
     display: flex;
@@ -705,6 +705,7 @@ footer .wrapper p {
     flex-basis: 31%;
   }
 
+  .card-item {  margin: 0 29px 20px 0;}
   .card-item:nth-child(even) { margin-right: 0;}
   .card-item { flex-basis: 48%; }
   .awesome-gallery { justify-content: space-between;}
@@ -811,6 +812,7 @@ footer .wrapper p {
     align-items: center;
   }
 
+  .card-item { margin: 0 0 20px 0; }
   .card-img::after { content: url('/weather_4day/assets/images/play-button@2x.png'); }
   .card-content { padding: 15px 0;}
   .live-camera { padding-top: 240px}
