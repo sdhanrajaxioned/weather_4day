@@ -406,6 +406,14 @@ input:focus { outline: none;}
   font-size: 12px;
   font-weight: 900;
 }
+
+.right-arrow::after {
+  content: url('/weather_4day/assets/images/arrow.png');
+  float: right;
+  text-indent: 0;
+
+}
+
 /*placeholder section styling ends here */
 
 /*features section styling starts here */
@@ -514,8 +522,12 @@ body {
 .photo-card-item:nth-child(odd) { margin-right: 37px; }
 .photo-card-content { padding: 17px 0 0 3.5% }
 .ratings { display: flex;} 
-.star { text-indent: -9999px; }
 .star.active::after { color: #1E202B;}
+
+.right-arrow,
+.star { 
+  text-indent: -9999px; 
+}
 
 .photo-card-content h2 { 
   color: #FFF;
@@ -693,10 +705,7 @@ footer .wrapper p {
     flex-basis: 31%;
   }
 
-<<<<<<< HEAD
-=======
   .card-item:nth-child(even) { margin-right: 0;}
->>>>>>> feature-css
   .card-item { flex-basis: 48%; }
   .awesome-gallery { justify-content: space-between;}
   .small-txt { padding: 15px 0 15px 7.2%;}
