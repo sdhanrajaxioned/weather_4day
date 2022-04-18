@@ -136,6 +136,8 @@ header { background-color: #1E202B; }
 .nav-links li a:hover { transition: all .4s ease-in; }
 .hamburger {display: none;}
 .nav-links li {margin: 0 5px;}
+.company-info { margin-left: 7px;}
+
 header .wrapper {
   padding: 40px 0 45px;
   display: flex;
@@ -148,8 +150,6 @@ header .wrapper {
   flex-basis: 19%;
   color: #676973;
 }
-
-.company-info { margin-left: 7px;}
 
 .company-info a { 
   color: #FFF; 
@@ -187,19 +187,15 @@ header .wrapper {
 }
 
 .input-form { position: relative; }
-
-.input-container {
-  width: 98.8%;
-  position: relative;
-}
+.input-container { width: 98.8%;}
 
 .find-btn {
   padding: 13px 36px;
   border: none;
   border-radius: 50px;
   position: absolute;
-  bottom: 10.2%;
   right: .5%;
+  bottom: 10.2%;
   background-color: #389AD8;
   color: #FFF;
   font-size: 12px;
@@ -207,15 +203,15 @@ header .wrapper {
 
 .subscribe-btn:hover,
 .find-btn:hover {
-  color: #389AD8;
   background-color: #EEE;
+  color: #389AD8;
   transition: .4s ease-in;
 }
 
 #city_field { 
-  padding-left: 10px;
   width: 100%;
   height: 47px;
+  padding-left: 10px;
   border: none;
   border-radius: 50px;
   background-color: #1E202B;
@@ -254,18 +250,17 @@ input:focus { outline: none;}
 }
 
 .weather-container { 
-  position: absolute;
   width: 39%;
   border-radius: 5px;
+  position: absolute;
   top: 57.5%;
-  left: 0;
   right: 0;
+  left: 0;
   margin: auto
 }
 
 .weather-info { 
   padding: 27px 0 0 20px;
-  padding-left: 20px; 
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: #323544;
@@ -306,13 +301,11 @@ input:focus { outline: none;}
   padding: 11px 0;
 }
 
-
 .humidity-container,
 .wind-container,
 .compass-container {
   display: flex;
 }
-
 
 .wind,
 .humidity,
@@ -324,14 +317,12 @@ input:focus { outline: none;}
 }
 
 .additional-info figure { align-self: center;}
-
 /* Banner styling ends here */
 
 /* live camera section styling starts here */
 .live-camera {
   padding: 237px 0 100px;
   background-color: #1E202B;
-  padding-top: 237px;
 }
 
 .live-camera .wrapper h3 {
@@ -346,17 +337,10 @@ input:focus { outline: none;}
   justify-content: space-between;
 }
 
-.card-item { 
-  flex-basis: 23%;
-}
-
+.card-item { flex-basis: 23%; }
 .card-item:last-of-type { margin-right: 0;}
-
 .card-img { position: relative; }
-
-.card-img img { 
-  border-radius: 5px;
-}
+.card-img img { border-radius: 5px; }
 
 .card-img::after {
   content: url('/weather_4day/assets/images/play-button.png');
@@ -374,13 +358,12 @@ input:focus { outline: none;}
 }
 
 .time {
-  font-size: 11px;
   color: #7A7C86;
+  font-size: 11px;
 }
 /* live camera section styling ends here */
 
 /*placeholder section styling starts here */
-
 .placeholder { background-color: #262936; }
 .placeholder-content p:last-of-type { padding: 21px 0 8px; }
 .placeholder-content figure img { width: inherit;}
@@ -449,12 +432,11 @@ input:focus { outline: none;}
 }
 
 .awesome-gallery-item {
-  flex-basis: 31%;
   margin: 0 11px 11px 0;
+  flex-basis: 31%;
 }
 
 .awesome-gallery-item:nth-child(3n) { margin: 0 0 11px 0;}
-
 .app-info .small-txt { padding: 17px 0 13px; }
 .weather-item:last-child { border-bottom: none; }
 
@@ -503,7 +485,6 @@ body {
 }
 
 .links li a { color: #A7A9B2;}
-.links li a:hover { color: #389AD8;}
 
 .links li a::after { 
   content: url('/weather_4day/assets/images/arrow.png');
@@ -587,13 +568,13 @@ footer {
   align-items: center;
 }
 
-.subscribe { flex-basis: 63.5%; }
-.social-links { padding-right: 9.2%;}
-
-.email-container { 
-  width: 100%;
+.subscribe { 
+  flex-basis: 63.5%; 
   position: relative;
 }
+
+.social-links { padding-right: 9.2%;}
+.email-container { width: 100%;}
 
 .subscribe-btn { 
   padding: 14px 21px;
@@ -697,9 +678,7 @@ footer .wrapper p {
     flex-direction: column;
   }
 
-  .weather-item:last-child {
-    border-bottom: 1px solid #2F313B;
-  }
+  .weather-item:last-child { border-bottom: 1px solid #2F313B; }
 
   .live-camera .wrapper {
     display: flex;
@@ -719,24 +698,15 @@ footer .wrapper p {
     align-items: center;
   }
 
-  .photo-card-item {
-    width: 100%;
-  }
-
   .photo-card-item figure,
-  .photo-card-item .photo-card-content { width: 50%;}
-
-  /* .photo-card-item figure img { 
-    height: 286px;
-    width: 154px;
-  } */
-
+  .photo-card-item .photo-card-content { 
+    width: 50%;
+  }
+  
+  .photo-card-item { width: 100%; }
   .photo-card-content p { font-size: 15px;}
   .photo-card-content h2 { font-size: 16px;}
-
-  .photo-card-content {
-    padding-right: 50px;
-  }
+  .photo-card-content { padding-right: 50px; }
 }
 
 /*media query for 767px starts here*/
@@ -867,9 +837,6 @@ footer .wrapper p {
   .awesome-gallery { max-width: 80%;}
 }
 
-
-
-
 /*media query for 460px starts here*/
 @media only screen and (max-width: 460px){
   .card-img::after { content: url('/weather_4day/assets/images/play-button.png'); }
@@ -909,4 +876,5 @@ footer .wrapper p {
   }
 
   .social-links li a:hover::after { color: #FFF;}
+  .links li a:hover { color: #389AD8;}
 }
