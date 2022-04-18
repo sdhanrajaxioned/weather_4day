@@ -359,7 +359,7 @@ input:focus { outline: none;}
 }
 
 .card-img::after {
-  content: url('/assets/images/play-button.png');
+  content: url('/weather_4day/assets/images/play-button.png');
   position: absolute;
   left: 50%;
   top: 50%;
@@ -409,7 +409,7 @@ input:focus { outline: none;}
 }
 
 .application-feature-item .bold-text::before {
-  content: url('/assets/images/arrow.png');
+  content: url('/weather_4day/assets/images/arrow.png');
   padding-right: 5%;
 }
 
@@ -471,7 +471,7 @@ input:focus { outline: none;}
 }
 
 .weather-post::before {
-  content: url('/assets/images/arrow.png');
+  content: url('/weather_4day/assets/images/arrow.png');
   padding-right: 2%;
 }
 
@@ -506,7 +506,7 @@ body {
 .links li a:hover { color: #389AD8;}
 
 .links li a::after { 
-  content: url('/assets/images/arrow.png');
+  content: url('/weather_4day/assets/images/arrow.png');
   padding: 0 5px 0 8px;
 }
 /* link section styling ends here*/
@@ -820,7 +820,7 @@ footer .wrapper p {
     align-items: center;
   }
 
-  .card-img::after { content: url('/assets/images/play-button@2x.png'); }
+  .card-img::after { content: url('/weather_4day/assets/images/play-button@2x.png'); }
   .card-content { padding: 15px 0;}
   .live-camera { padding-top: 240px}
   
@@ -872,7 +872,7 @@ footer .wrapper p {
 
 /*media query for 460px starts here*/
 @media only screen and (max-width: 460px){
-  .card-img::after { content: url('/assets/images/play-button.png'); }
+  .card-img::after { content: url('/weather_4day/assets/images/play-button.png'); }
   .awesome-gallery { max-width: 100%; }
 }
 
