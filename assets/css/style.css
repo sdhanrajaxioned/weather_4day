@@ -685,10 +685,15 @@ footer .wrapper p {
     flex-direction: column;
   }
 
+  .awesome-gallery-item {
+    margin: 0 0 20px 0;
+    flex-basis: 31%;
+  }
+
   .card-item { flex-basis: 48%; }
+  .awesome-gallery { justify-content: space-between;}
   .small-txt { padding: 15px 0 15px 7.2%;}
   .card-content { padding: 10px 0 30px;}
-  .awesome-gallery { max-width: 52%;}
   .features-flex { flex-direction: column; }
   .application-feature-item figure { padding-right: 1%; }
   .photo-card-item:nth-child(odd) { margin-right: 0; }
@@ -810,7 +815,6 @@ footer .wrapper p {
   }
   
   .blue-txt{ padding-right: 4%; }
-  .awesome-gallery { max-width: 55%;}
   .placeholder {padding: 15px 0;}
   .social-links { padding-top: 30px;}
 
@@ -825,27 +829,15 @@ footer .wrapper p {
   .logo-container { flex-basis: 60%; }
   .logo { padding-right: 3%;}
   .company-info { flex-basis: 60%;}
-  .awesome-gallery { max-width: 70%;}
 }
 
 @media only screen and (max-width: 590px){
   .photo-card-img img { height: 100%; }
 }
 
-/*media query for 540px starts here*/
-@media only screen and (max-width: 540px){
-  .awesome-gallery { max-width: 80%;}
-}
-
 /*media query for 460px starts here*/
 @media only screen and (max-width: 460px){
   .card-img::after { content: url('/weather_4day/assets/images/play-button.png'); }
-  .awesome-gallery { max-width: 100%; }
-}
-
-/*media query for 36px starts here*/
-@media only screen and (max-width: 365px){
-  .awesome-gallery-item{ max-width: 92px;}
 }
 
 /* media query for giving links hover effect over 767px */
