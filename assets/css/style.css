@@ -446,7 +446,7 @@ input:focus { outline: none;}
 }
 
 .awesome-gallery-item {
-  margin: 0 11px 11px 0;
+  margin: 0 3.5% 11px 0;
   flex-basis: 31%;
 }
 
@@ -705,13 +705,12 @@ footer .wrapper p {
   }
 
   .awesome-gallery-item {
-    margin: 0 0 20px 0;
-    flex-basis: 31%;
+    margin: 0 2% 15px 0;
+    flex-basis: 32%;
   }
 
   .card-item:nth-child(even) { margin-right: 0;}
   .card-item { flex-basis: 48.8%; }
-  .awesome-gallery { justify-content: space-between;}
   .small-txt { padding: 15px 0 15px 7.2%;}
   .card-content { padding: 10px 0 30px;}
   .features-flex { flex-direction: column; }
